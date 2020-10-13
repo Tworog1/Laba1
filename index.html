@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+	<title> LR_1 </title>
+</head>
+<body>
+
+	<div class="wrapper">
+		<div class="container">
+			<div class="container__content">
+				<div class="container__content-rightside">
+					<div class="container__content-rightside_item">
+
+						<div class="item task__list task_1 active">
+							<div class="item__options">
+								<select id="listbox" onchange="changeSortType()">
+									<option> За алфавітом </option>
+									<option> За балом </option>
+								</select>
+							</div>
+							<div class="item__content">
+								<div class="item__content-results">
+
+									<div class="results__item">
+										<div class="results__item-topline">
+											<span> 1 </span>
+											<p> Найкращий бал </p>
+										</div>
+										<div class="results__item-content" id="_1">
+										</div>
+									</div>
+
+									<div class="results__item">
+										<div class="results__item-topline">
+											<span> 2 </span>
+											<p> Середній бал </p>
+										</div>
+										<div class="results__item-content" id="_2">
+										</div>
+									</div>
+
+									<div class="results__item">
+										<div class="results__item-topline">
+											<span> 3 </span>
+											<p> Найгірший бал </p>
+										</div>
+										<div class="results__item-content" id="_3">
+										</div>
+									</div>
+
+								</div>
+								<div class="item__content-list" id="list"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/source/data.js"></script>
+	<script src="js/source/function.js"></script>
+	<script src="js/common.js"></script>
+
+</body>
+</html>
